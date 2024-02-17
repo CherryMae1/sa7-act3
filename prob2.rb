@@ -6,9 +6,6 @@ player_input = gets.chomp
 points = 0
 
 while player_input != 'exit'
-  if player_input == 'exit'
-   break
-  end
   if player_input == '1'
     points = points + 5
     puts "You entered Room 1 and earned 5 points."
@@ -24,6 +21,9 @@ while player_input != 'exit'
     puts "You entered Room 3 and earned 15 points."
     puts "Choose a room (1-3) to enter or 'exit' to end the game: "
     player_input = gets.chomp
+  if player_input == 'exit'
+    break
+  end
   end
 end
 
